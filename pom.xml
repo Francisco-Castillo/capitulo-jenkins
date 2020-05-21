@@ -8,7 +8,7 @@
   <packaging>war</packaging>
 
   <name>capitulo-jenkins</name>
-  <!--Prueba   -->
+  <!--Prueba     -->
 
   <properties>
     <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
