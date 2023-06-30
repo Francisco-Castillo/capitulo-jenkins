@@ -17,7 +17,7 @@ pipeline{
 
 		stage ('Stage 3') {
 			steps {
-				echo 'Stage 3'
+				sh `curl -X POST https://api.telegram.org/bot${token}/sendMessage -d chat_id=${chatId} -d text="Build successfully"`
 			}
 			
 		}
