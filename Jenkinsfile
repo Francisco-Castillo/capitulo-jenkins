@@ -5,11 +5,16 @@ pipeline{
             chatId = credentials('chatId')
         }
 	stages {
-		stage ('Stage 1') {
+		stage ('Build') {
 			steps {
-				echo 'Stage 1'
+				sh 'mvn clean package'
 			}
-
+                        post {
+                            success {
+                                echo 'Now Archiving...'
+                                archieveArtifacts artifacts: '**/target/*.war'
+                            }
+                        }
 		}
 
 		stage ('Stage 2') {
