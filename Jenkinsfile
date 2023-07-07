@@ -4,6 +4,9 @@ pipeline{
             token = credentials('token')
             chatId = credentials('chatId')
         }
+        tools {
+            maven 'maven'
+        }
 	stages {
 		stage ('Build') {
 			steps {
