@@ -20,9 +20,9 @@ pipeline{
                         }
 		}
 
-		stage ('Stage 2') {
+		stage ('Deploy to staging') {
 			steps {
-				echo 'Stage 2'
+				build job: 'deploy-to-staging'
 			}
 			
 		}
