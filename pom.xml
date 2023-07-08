@@ -4,7 +4,7 @@
 
   <groupId>com.fcastillo</groupId>
   <artifactId>capitulo-jenkins</artifactId>
-  <version>${my.version}</version>
+  <version>1.0.4</version>
   <packaging>war</packaging>
 
   <name>jenkins-test</name>
@@ -13,7 +13,6 @@
   <properties>
     <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <my.version>1.0.3</my.version>
   </properties>
     
   <dependencies>
@@ -28,7 +27,7 @@
   </dependencies>
 
   <build>
-      <finalName>jenkins-test-${my.version}</finalName>
+      <finalName>jenkins-test</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
