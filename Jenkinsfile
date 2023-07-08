@@ -9,6 +9,9 @@ pipeline{
         }
 	stages {
 		stage ('Build') {
+                        steps {
+                            sh 'sudo rm -rf /var/lib/jenkins/workspace/package'
+                        }
 			steps {
 				sh 'mvn clean package'
 			}
